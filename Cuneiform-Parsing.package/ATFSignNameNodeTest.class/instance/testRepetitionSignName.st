@@ -1,3 +1,8 @@
 accessing
 testRepetitionSignName
-	self skip
+	| examples |
+	examples := #('3(ŠA₃)').
+	examples do: [ :ex |
+		self
+			parse: ex
+			rule: #repetitionSignName ]
