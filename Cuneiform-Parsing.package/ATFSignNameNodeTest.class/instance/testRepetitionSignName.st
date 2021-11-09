@@ -1,0 +1,3 @@
+accessing
+testRepetitionSignName
+	self skip

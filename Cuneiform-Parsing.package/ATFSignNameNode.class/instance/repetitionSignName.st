@@ -1,0 +1,3 @@
+accessing
+repetitionSignName
+	^ digitalRepetitionSignName / atLeastRepetitionSignName / unknownRepetitionSignName

@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Cuneiform-Parsing-Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"curved",
+		"modifier",
+		"sheshig",
+		"gunu",
+		"flat",
+		"tenu",
+		"nutillu",
+		"zidatenu",
+		"horizontallyReflected",
+		"kabatenu",
+		"verticallyReflected",
+		"rotated",
+		"variant"
+	],
+	"name" : "ATFSignModifierNode",
+	"type" : "normal"
+}

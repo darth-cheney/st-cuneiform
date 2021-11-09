@@ -1,0 +1,26 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Cuneiform-Parsing-Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"signName",
+		"listSignName",
+		"numericSignName",
+		"qualifiedSignName",
+		"baseSignName",
+		"atfUppercase",
+		"subscriptDigit",
+		"letterUppercase",
+		"repetitionSignName",
+		"subscript",
+		"atomicSignName",
+		"digitalRepetitionSignName",
+		"unknownRepetitionSignName",
+		"atLeastRepetitionSignName"
+	],
+	"name" : "ATFSignNameNode",
+	"type" : "normal"
+}

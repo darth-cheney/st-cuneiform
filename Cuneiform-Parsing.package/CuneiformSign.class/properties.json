@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Cuneiform-Parsing-Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"signName",
+		"reading",
+		"modifiers",
+		"qualifier"
+	],
+	"name" : "CuneiformSign",
+	"type" : "normal"
+}
