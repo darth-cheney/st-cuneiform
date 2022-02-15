@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Cuneiform-Parsing-Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"operator",
+		"beside",
+		"joining",
+		"containing",
+		"above",
+		"crossing",
+		"opposing",
+		"threeRepeat",
+		"fourRepeat"
+	],
+	"name" : "ATFCompoundSignOperatorNode",
+	"type" : "normal"
+}

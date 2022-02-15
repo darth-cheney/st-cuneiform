@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Cuneiform-Parsing-Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"signValue",
+		"atfLowercase",
+		"subscriptDigit",
+		"subscript",
+		"baseValue"
+	],
+	"name" : "ATFSignValueNode",
+	"type" : "normal"
+}

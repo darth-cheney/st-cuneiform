@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Cuneiform-Parsing-Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"value",
+		"number"
+	],
+	"name" : "CuneiformValue",
+	"type" : "normal"
+}
