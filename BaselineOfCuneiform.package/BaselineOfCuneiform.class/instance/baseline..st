@@ -1,5 +1,6 @@
 accessing
 baseline: spec
+	<baseline>
 	"Primary baseline for the Cuneiform and ATF parsing packages"
 	spec for: #common do: [
 		spec baseline: 'PetitParser2' with: [
