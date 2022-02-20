@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SmaCCParser",
+	"category" : "Cuneiform-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ATFUnicodeParser",
+	"type" : "normal"
+}
