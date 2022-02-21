@@ -1,15 +1,12 @@
 generated
 scanForTokenX4
 
-	self recordMatch: #( 25 ).
 	self step.
-	currentCharacter == $E ifTrue: [ 
+	((currentCharacter between: $a and: $w) or: [ 
+		 currentCharacter between: $y and: $z ]) ifTrue: [ 
+		[ 
+		self recordMatch: #( 28 ).
 		self step.
-		currentCharacter == $A ifTrue: [ 
-			^ self recordAndReportMatch: #( 11 ) ].
-		^ self reportLastMatch ].
-	currentCharacter == $Z ifTrue: [ 
-		self step.
-		currentCharacter == $L ifTrue: [ 
-			^ self recordAndReportMatch: #( 12 ) ] ].
+		(currentCharacter between: $a and: $w) or: [ 
+			currentCharacter between: $y and: $z ] ] whileTrue ].
 	^ self reportLastMatch

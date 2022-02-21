@@ -1,6 +1,8 @@
 generated
 definitionComment
-"%unicode;
+"%glr;
+
+%unicode;
 
 
 <subscriptDigit>
@@ -10,21 +12,33 @@ definitionComment
 	: (š | ṣ | ṭ | ś | ḫ | ŋ | [a-z])
 	;
 <validUppercaseLetter>
-	: (Š | Ṣ | Ṭ | Ś | Ḫ | Ŋ | [A-W YZ]) # Exclude capital X, which we use a a special control character in sign names
+	: (Š | Ṣ | Ṭ | Ś | Ḫ | Ŋ | [A-WYZ]) # Exclude capital X, which we use a a special control character in sign names
 	;
 <digit>
 	: \d
 	;
 <modifier>
-	: @([cftsgnzkrhv] | <digit>+)
+	: \@([cftsgnzkrhv] | <digit>+)
 	;
 <allograph>
-	: ~ [a-w yz]+
+	: \~[a-wyz]+
 	;
 <compundOperator>
 	: [+&×.%@]
+	;
+<flag>
+	: [?!*#]
+	;
+<spaces>
+	: \ +
+	;
+<singleSpace>
+	: \ {1,1}
+	;
+<graphemeSeparator>
+	: \-
 	;Start 
-	: <subscriptDigit>
+	: LineContent
 	;
 SimpleSignName
 	: <validUppercaseLetter> 'letters'+ <subscriptDigit> 'number' *
@@ -79,4 +93,16 @@ CompundSignName
 	;
 GroupedSignName
 	: ""("" SignName <compundOperator> SignName "")"" <allograph>? <modifier>?
+	;
+Grapheme
+	: GraphemeRepetition 'repeatedGrapheme' <flag>'flags'*
+	| SignName 'signName' <flag> 'flags'*
+	| SignValue 'signValue' <flag> 'flags'*
+	;
+Word
+	: Grapheme <graphemeSeparator> Word
+	| Grapheme
+	;
+LineContent
+	: Word <singleSpace>+ Word
 	;"

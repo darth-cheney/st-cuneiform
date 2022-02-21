@@ -5,11 +5,11 @@ scanForTokenX3
 	self step.
 	currentCharacter == $E ifTrue: [ 
 		self step.
-		currentCharacter == $C ifTrue: [ 
-			^ self recordAndReportMatch: #( 14 ) ].
+		currentCharacter == $A ifTrue: [ 
+			^ self recordAndReportMatch: #( 11 ) ].
 		^ self reportLastMatch ].
-	currentCharacter == $S ifTrue: [ 
+	currentCharacter == $Z ifTrue: [ 
 		self step.
-		currentCharacter == $P ifTrue: [ 
-			^ self recordAndReportMatch: #( 15 ) ] ].
+		currentCharacter == $L ifTrue: [ 
+			^ self recordAndReportMatch: #( 12 ) ] ].
 	^ self reportLastMatch

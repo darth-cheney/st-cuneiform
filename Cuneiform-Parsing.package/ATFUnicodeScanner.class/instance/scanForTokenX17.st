@@ -1,9 +1,8 @@
 generated
 scanForTokenX17
 
-	((currentCharacter between: $0 and: $2) or: [ 
-		 currentCharacter between: $5 and: $9 ]) ifTrue: [ 
-		^ self recordAndReportMatch: #( 26 ) ].
+	('!#*?' includes: currentCharacter) ifTrue: [ 
+		^ self recordAndReportMatch: #( 30 ) ].
 	((currentCharacter between: $% and: $&) or: [ 
 		 '+.×' includes: currentCharacter ]) ifTrue: [ 
 		^ self recordAndReportMatch: #( 29 ) ].

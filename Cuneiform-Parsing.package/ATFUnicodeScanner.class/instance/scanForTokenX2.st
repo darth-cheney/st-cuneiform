@@ -1,14 +1,15 @@
 generated
 scanForTokenX2
 
+	self recordMatch: #( 25 ).
 	self step.
-	(currentCharacter == Character space or: [ 
-		 (currentCharacter between: $a and: $w) or: [ 
-			 currentCharacter between: $y and: $z ] ]) ifTrue: [ 
-		[ 
-		self recordMatch: #( 28 ).
+	currentCharacter == $E ifTrue: [ 
 		self step.
-		currentCharacter == Character space or: [ 
-			(currentCharacter between: $a and: $w) or: [ 
-				currentCharacter between: $y and: $z ] ] ] whileTrue ].
+		currentCharacter == $C ifTrue: [ 
+			^ self recordAndReportMatch: #( 14 ) ].
+		^ self reportLastMatch ].
+	currentCharacter == $S ifTrue: [ 
+		self step.
+		currentCharacter == $P ifTrue: [ 
+			^ self recordAndReportMatch: #( 15 ) ] ].
 	^ self reportLastMatch
