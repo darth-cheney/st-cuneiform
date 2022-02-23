@@ -1,0 +1,4 @@
+generated
+emptySymbolTokenId
+
+	^ 11

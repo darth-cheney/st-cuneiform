@@ -17,6 +17,7 @@ reduceTable
 	#(42 1 #reduceFor: 1000466 false) 
 	#(42 1 #reduceFor: 1000465 false) 
 	#(55 1 #reduceFor: 2152450 false) 
+	#(56 1 #reduceFor: 2210818 false) 
 	#(34 1 #reduceFor: 568321 false) 
 	#(40 2 #reduceFor: 730114 false) 
 	#(40 2 #reduceFor: 730115 false) 

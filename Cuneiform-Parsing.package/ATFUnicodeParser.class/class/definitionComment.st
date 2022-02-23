@@ -104,5 +104,6 @@ Word
 	| Grapheme
 	;
 LineContent
-	: Word <singleSpace>+ Word
+	: Word <singleSpace>+ LineContent
+	| Word
 	;"

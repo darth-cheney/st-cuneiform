@@ -1,0 +1,4 @@
+generated
+startingStateForStart
+
+	^ 1
