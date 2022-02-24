@@ -1,4 +1,4 @@
 generated
 emptySymbolTokenId
 
-	^ 11
+	^ 18

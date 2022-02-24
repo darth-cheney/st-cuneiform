@@ -1,8 +1,15 @@
 generated
 scanForTokenX3
 
-	self recordMatch: #( 2 ).
+	self recordMatch: #( 1 8 ).
 	self step.
-	(''',z' includes: currentCharacter) ifTrue: [ 
-		^ self recordAndReportMatch: #( 2 ) ].
+	(currentCharacter <= Character tab or: [ 
+		 (currentCharacter between: Character pageUp and: Character newPage) 
+			 or: [ currentCharacter >= (Character value: 14) ] ]) ifTrue: [ 
+		[ 
+		self recordMatch: #( 8 ).
+		self step.
+		currentCharacter <= Character tab or: [ 
+			(currentCharacter between: Character pageUp and: Character newPage) 
+				or: [ currentCharacter >= (Character value: 14) ] ] ] whileTrue ].
 	^ self reportLastMatch

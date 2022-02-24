@@ -1,6 +1,7 @@
 generated
 symbolNames
 
-	^ #( '<uppercasePhoneme>' '<lowercasePhoneme>' '<digit>' 'B e g i n'
-	     'Start' '<uppercasePhoneme>+' 'SignValue' '<digit> ''number''*'
-	     'SimpleSignValue' '<lowercasePhoneme>+' 'E O F' 'error' )
+	^ #( '"="' '<lowercasePhoneme>' '<digit>' '<space>' '<amp>' '<pNumber>'
+	     '<nl>' '<restOfLine>' 'B e g i n' 'Start' 'SignValue'
+	     '<digit> ''number''*' 'SimpleSignValue' '<lowercasePhoneme>+'
+	     'AmpLine' 'LinesTest' 'Line' 'E O F' 'error' )
